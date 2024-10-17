@@ -1,4 +1,10 @@
-import { ActivityIndicator, FlatList, StyleSheet, View } from "react-native";
+import {
+  ActivityIndicator,
+  FlatList,
+  StyleSheet,
+  View,
+  Platform,
+} from "react-native";
 import { useMemo, useState } from "react";
 import { TextInput } from "../components/TextInput";
 import { Button } from "../components/Button";
@@ -44,6 +50,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: "100%",
+    paddingVertical: Platform.OS === "android" ? 32 : 8,
     paddingHorizontal: 8,
     alignItems: "center",
   },
