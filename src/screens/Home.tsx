@@ -1,10 +1,4 @@
-import {
-  ActivityIndicator,
-  FlatList,
-  StyleSheet,
-  View,
-  Text,
-} from "react-native";
+import { ActivityIndicator, FlatList, StyleSheet, View } from "react-native";
 import { useMemo, useState } from "react";
 import { TextInput } from "../components/TextInput";
 import { Button } from "../components/Button";
